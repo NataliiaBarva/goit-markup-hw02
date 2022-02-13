@@ -6,11 +6,186 @@ font-family: "Roboto", sans-serif;*/
 #E5E5E5
 #F5F4FA*/
 
+:root {
+  /*Основні шрифти*/
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /*Світла тема тексту*/
+  --accent-txt-cl: #2196f3;
+  --primary-light-cl: #212121;
+  --secondary-light-cl: #757575;
+
+  /*Темна тема тексту*/
+  --primary-dark-cl: #ffffff;
+  --secondary-dark-cl: rgba(255, 255, 255, 0.6);
+
+  /*Світла тема фону*/
+  --primary-light-bg: #e5e5e5;
+  --secondary-light-bg: #f5f4fa;
+  --nav-bg: #ffffff;
+
+  /*Темна тема фону*/
+  --secondary-dark-bg: #2f303a;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--secondary-light-cl);
+}
+.page-header {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--secondary-light-cl);
+}
 
-  color: #757575;
+.nav-items {
+  font-family: var(--main-font);
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: var(--nav-bg);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-size: 700;
+  color: var(--accent-txt-cl);
+}
+
+.span {
+  font-family: var(--secondary-font);
+  font-size: 700;
+  color: var(--primary-light-cl);
+}
+
+.hero-items {
+  background: var(--secondary-dark-bg);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-dark-cl);
+  background-color: var(--secondary-dark-bg);
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-dark-cl);
+  background-color: var(--accent-txt-cl);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-light-cl);
+}
+
+h3 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-light-cl);
+}
+
+.el-name {
+  font-family: var(--main-font);
+  font-size: 500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-cl);
+}
+
+.el-post {
+  font-family: var(--main-font);
+  font-size: 400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-light-cl);
+}
+
+.collective {
+  --secondary-light-bg: #e5e5e5;
+}
+main {
+  background-color: var(--secondary-light-bg);
+}
+
+.collective {
+  background-color: var(--secondary-light-bg);
+}
+
+footer {
+  background: var(--secondary-dark-bg);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
 }

@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-        <a href="/">WebStudio</a>
-        
+    <header class="page-header">
+        <!--Навигация-->
+        <nav class="nav-items">
+        <a href="/" class="logo">WebStudio</a>        
             <ul class="nav-list">
-                <li class="nav-item"><a href="">Студия</a></li>
+                <li class="nav-item current"><a href="">Студия</a></li>
                 <li class="nav-item"><a href="./portfolio.html">Портфолио</a></li>
                 <li class="nav-item"><a href="">Контакты</a></li>
             </ul>
@@ -30,12 +30,15 @@
         </nav>
     </header>
 <main>
-        <section class="hero">
+        <!--Герой-->
+        <section class="hero-items">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <!--Кнопка Заказать услугу-->
             <button class="hero-btn" type="button">Заказать услугу</button>
         </section>
     <section>
-        <h2 hidden>Преимущества</h2>
+        <!--Секция преимущества-->
+        <h2 hidden>Переваги</h2>
         <ul class="advantages">
             <li class="advantages-attention"> 
                 <h3>Внимание к деталям</h3>
@@ -56,40 +59,42 @@
         </ul>
         </section>
         <section>
-        <h2>Чем мы занимаемся</h2>
+            <!--Секция Чем мы занимаемся, три фото-->
+        <h2 class="">Чем мы занимаемся</h2>
         <ul>
             <li> <img src="./images/kod.jpg" alt="написание кода" width="370" height="294"> </li>
             <li> <img src="./images/adaptive.jpg" alt="адаптивная верстка" width="370" height="294"> </li>
             <li> <img src="./images/pixel.jpg" alt="оптимизация изображений" width="370" height="294"> </li>
         </ul>
     </section>
-    <section>
-        <h2 class="">Наша команда</h2>
-        <ul>
-            <li>
+    <!--Секция Наша команда-->
+    <section class="collective">
+        <h2 class="collective-items">Наша команда</h2>
+        <ul class="collective-item">
+            <li class="el">
                 <img src="./images/photo1.jpg" alt="здесь мы хотели показать вам фото Игоря Демьяненко" width="270" height="260">
-                <h3>Игорь Демьяненко</h3>
-                <p>Product Designer</p>
+                <h3 class="el-name">Игорь Демьяненко</h3>
+                <p class="el-post">Product Designer</p>
             </li>
-            <li>
+            <li class="el">
                 <img src="./images/photo2.jpg" alt="здесь мы хотели показать вам фото Ольги Репиной" width="270" height="260">
-                <h3>Ольга Репина</h3>
-                <p>Frontend Developer</p>
+                <h3 class="el-name">Ольга Репина</h3>
+                <p class="el-post">Frontend Developer</p>
             </li>
-            <li>
+            <li class="el">
                 <img src="./images/photo3.jpg" alt="здесь мы хотели показать вам фото Николая Тарасова" width="270" height="260">
-                <h3>Николай Тарасов</h3>
-                <p>Marketing</p>
+                <h3 class="el-name">Николай Тарасов</h3>
+                <p class="el-post">Marketing</p>
             </li>
-            <li>
+            <li class="el">
                 <img src="./images/photo4.jpg" alt="здесь мы хотели показать вам фото Михаила Ермакова" width="270" height="260">
-                <h3>Михаил Ермаков</h3>
-                <p>UI Designer</p>
+                <h3 class="el-name">Михаил Ермаков</h3>
+                <p class="el-post">UI Designer</p>
             </li>
         </ul>
     </section>
 </main>
-
+<!--СекцияФутер-->
     <footer>
         <a href="/">WebStudio</a>
         <address>
