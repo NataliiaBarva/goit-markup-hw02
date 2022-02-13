@@ -52,19 +52,26 @@ body {
   top: 0px;
   background: var(--nav-bg);
 }
-
-.logo {
-  font-family: var(--secondary-font);
-  font-size: 700;
+.nav-items:hover .nav-items:focus {
   color: var(--accent-txt-cl);
 }
-
-.span {
+.nav-items:active {
+  color: var(--accent-txt-cl);
+}
+.logo {
   font-family: var(--secondary-font);
   font-size: 700;
   color: var(--primary-light-cl);
 }
 
+.nav-item {
+  font-family: var(--main-font);
+  color: var(--primary-light-cl);
+  font-size: 500;
+}
+
+a {
+}
 .hero-items {
   background: var(--secondary-dark-bg);
   width: 1600px;
