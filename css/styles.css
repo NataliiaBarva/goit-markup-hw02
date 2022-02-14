@@ -4,28 +4,31 @@ font-family: "Roboto", sans-serif;*/
 /*#FFFFFF
 #2F303A
 #E5E5E5
-#F5F4FA*/
+#F5F4FA
+#2196f3
+#212121
+#757575*/
 
 :root {
-  /*Основні шрифти*/
+  /*Основные шрифты*/
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 
-  /*Світла тема тексту*/
+  /*Светлая тема текста*/
   --accent-txt-cl: #2196f3;
   --primary-light-cl: #212121;
   --secondary-light-cl: #757575;
 
-  /*Темна тема тексту*/
+  /*Темная тема текста*/
   --primary-dark-cl: #ffffff;
   --secondary-dark-cl: rgba(255, 255, 255, 0.6);
 
-  /*Світла тема фону*/
+  /*Светлая тема фона*/
   --primary-light-bg: #e5e5e5;
   --secondary-light-bg: #f5f4fa;
   --nav-bg: #ffffff;
 
-  /*Темна тема фону*/
+  /*Темная тема фона*/
   --secondary-dark-bg: #2f303a;
 }
 
@@ -36,6 +39,14 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-light-cl);
 }
+/* отменить точки в списках */
+ul {
+  list-style: none;
+}
+.link {
+  direction: none;
+}
+
 .page-header {
   font-family: var(--main-font);
   font-size: 14px;
@@ -44,34 +55,56 @@ body {
   color: var(--secondary-light-cl);
 }
 
-.nav-items {
+.nav-item {
   font-family: var(--main-font);
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-light-cl);
   background: var(--nav-bg);
 }
-.nav-items:hover .nav-items:focus {
+.nav-item:hover .nav-items:focus {
   color: var(--accent-txt-cl);
 }
-.nav-items:active {
+.nav-item:active {
   color: var(--accent-txt-cl);
 }
+/* логотип */
 .logo {
   font-family: var(--secondary-font);
   font-size: 700;
+  color: var(--accent-txt-cl);
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-light {
   color: var(--primary-light-cl);
 }
 
+.logo-dark {
+  color: var(--primary-dark-cl);
+}
 .nav-item {
   font-family: var(--main-font);
   color: var(--primary-light-cl);
   font-size: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-a {
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
 }
+
 .hero-items {
   background: var(--secondary-dark-bg);
   width: 1600px;
@@ -101,7 +134,6 @@ a {
 }
 .hero-btn {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -122,11 +154,12 @@ a {
   background: var(--accent-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 h2 {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -149,7 +182,6 @@ h3 {
 .el-name {
   font-family: var(--main-font);
   font-size: 500;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,7 +192,6 @@ h3 {
 .el-post {
   font-family: var(--main-font);
   font-size: 400;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -184,15 +215,15 @@ main {
   background-color: var(--secondary-light-bg);
 }
 
+a {
+  text-decoration: none;
+}
 .collective {
   background-color: var(--secondary-light-bg);
 }
 
 footer {
+  font-family: var(--main-font);
+  color: var(--primary-dark-cl);
   background: var(--secondary-dark-bg);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #2196f3;
 }
