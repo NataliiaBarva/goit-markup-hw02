@@ -76,13 +76,32 @@ span.logo-light {
   text-decoration: none;
 }
 /* Змінити колір інтерактивних елементів */
-.site-nav:hover,
-.site-nav:focus,
-.site-nav:active {
+.link:hover,
+.link:focus,
+.link:active {
   color: var(--accent-txt-cl);
 }
 
-.link .current {
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+  color: var(--accent-txt-cl);
+}
+
+.link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-light-cl);
+}
+
+.footer-link {
+  font-family: var(--main-font);
+}
+.current {
   color: var(--accent-txt-cl);
 }
 
@@ -197,6 +216,9 @@ main {
   background: var(--primary-light-bg);
 }
 
+.btn:focus {
+  color: var(--accent-txt-cl);
+}
 .button-filtr {
   color: var(--primary-light-cl);
   width: 84px;
