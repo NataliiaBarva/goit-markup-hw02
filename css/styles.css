@@ -6,7 +6,8 @@ font-family: "Roboto", sans-serif;*/
 #2F303A темний герой
 #2196f3 голубий акцент тексту
 #212121 заголовки
-#757575 текст*/
+#757575 текст
+ #000000 лого*/
 
 :root {
   /*Основные шрифты*/
@@ -17,6 +18,7 @@ font-family: "Roboto", sans-serif;*/
   --accent-txt-cl: #2196f3;
   --primary-light-cl: #212121;
   --secondary-light-cl: #757575;
+  --logo-light-cl: #000000;
 
   /*Темная тема текста*/
   --primary-dark-cl: #ffffff;
@@ -46,79 +48,58 @@ ul {
 
 /* логотип */
 .logo {
+  text-decoration: none;
   font-family: var(--secondary-font);
-  font-size: 700;
-  color: var(--accent-txt-cl);
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--accent-txt-cl);
 }
 span.logo-light {
-  color: var(--primary-light-cl);
-}
-
-
-/* Меню навігації */
-/* a { 
-  color: var(--primary-light-cl);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}*/
-
-.site-nav {
-  color: var(--primary-light-cl);
-  text-decoration: none;
-}
-/* Змінити колір інтерактивних елементів */
-.link:hover,
-.link:focus,
-.link:active {
-  color: var(--accent-txt-cl);
-}
-
-.footer-link:hover,
-.footer-link:focus,
-.footer-link:active {
-  color: var(--accent-txt-cl);
+  color: var(--logo-light-cl);
 }
 
 .link {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-light-cl);
-}
-
-.footer-link {
-  font-family: var(--main-font);
-}
-.current {
-  color: var(--accent-txt-cl);
+  text-decoration: none;
 }
 
 .nav {
   background-color: var(--nav-bg);
 }
 
-.auth-nav {
+.site-nav-link {
   text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-light-cl);
+}
+
+.auth-nav-link {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--secondary-light-cl);
 }
-.nav-btn:hover,
-.nav-btn:focus,
-.nav-btn:active {
+
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-txt-cl);
 }
+ .current {
+   color: var(--accent-txt-cl);
+ }
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-txt-cl);
 }
+
 main {
   background-color: var(--secondary-light-bg);
 }
@@ -132,7 +113,6 @@ main {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -155,23 +135,30 @@ main {
 
 .features-caption {
   font-family: var(--main-font);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-light-cl);
-}
-.features-caption {
-  font-family: var(--main-font)
-  font-size: 36px;
-  line-height: 1.17;
 }
 
 .features-text {
+  font-family: var(--main-font);
   color: var(--second-text-color);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
+.job {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-cl);
+}
 .people {
   background-color: var(--primary-light-bg)
 }
@@ -181,7 +168,7 @@ main {
   width: 270px;
   height: 368px;
 }
-.people-title, .job {
+.people-title {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
@@ -209,65 +196,88 @@ main {
 /* сторінка портфоліо */
 
 .filtr {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
-  background: var(--primary-light-bg);
+  background: var(--primary-dark-cl)
 }
 
-.btn:focus {
-  color: var(--accent-txt-cl);
+.btn:focus,
+.btn:hover {
+  background-color: var(--accent-txt-cl);
+}
+
+.filtr-item {
+  font-family:var(--main-font)
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-cl);
 }
 .button-filtr {
-  color: var(--primary-light-cl);
-  width: 84px;
-  height: 26px;
-  left: 598px;
-  top: 180px;
-
   font-family: var(--main-font)
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  color: var(--primary-light-cl);
 }
 
 .portfolio-name {
   font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
   color: var(--primary-light-cl);
 }
 
 .portfolio-item {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
 
+.portfolio-tipe {
+  font-family: var(--main-font)
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-light-cl);
+}
 
 /* стилизация подвала */
+
+address {
+  font-style: normal;
+}
+.footer-link {
+  text-decoration: none;
+}
+
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-txt-cl);
+}
+
 span.logo-dark {
   color: var(--primary-dark-cl);
 }
 
-.footer-link {
-  text-decoration: none;
-}
- .footer-link {
+.footer-map {
   font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--primary-dark-cl);
+}
+.footer-contact {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  
 }
 
 .footer {
   background: var(--secondary-dark-bg);
-  width: 1600px;
-  height: 252px;
-}
+  }
