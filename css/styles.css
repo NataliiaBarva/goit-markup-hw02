@@ -202,8 +202,12 @@ main {
 .btn:focus,
 .btn:hover {
   background-color: var(--accent-txt-cl);
+  color: var(--primary-dark-cl);
 }
 
+.btn {
+  cursor: pointer;
+}
 .filtr-item {
   font-family:var(--main-font)
   font-weight: 500;
