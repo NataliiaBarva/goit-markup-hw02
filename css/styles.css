@@ -10,25 +10,25 @@ font-family: "Roboto", sans-serif;*/
  #000000 лого*/
 
 :root {
-  /*Основные шрифты*/
+  /*Основні шрифти*/
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
 
-  /*Светлая тема текста*/
+  /*Светла тема тексту*/
   --accent-txt-cl: #2196f3;
   --primary-light-cl: #212121;
   --secondary-light-cl: #757575;
   --logo-light-cl: #000000;
 
-  /*Темная тема текста*/
+  /*Темна тема тексту*/
   --primary-dark-cl: #ffffff;
   --secondary-dark-cl: rgba(255, 255, 255, 0.6);
 
-  /*Светлая тема фона*/
+  /*Светла тема фону*/
   --primary-light-bg: #f5f4fa;
   --nav-bg: #ffffff;
 
-  /*Темная тема фона*/
+  /*Темна тема фону*/
   --secondary-dark-bg: #2f303a;
 }
 
@@ -41,7 +41,7 @@ body {
   background-color: var(--primary-dark-cl)
 }
 
-/* отменить точки в списках */
+/* відмінити точки в списках */
 ul {
   list-style: none;
 }
