@@ -38,7 +38,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-light-cl);
-  background-color: var(--primary-dark-cl)
+  background-color: var(--primary-dark-cl);
 }
 
 /* відмінити точки в списках */
@@ -100,9 +100,6 @@ span.logo-light {
   color: var(--accent-txt-cl);
 }
 
-main {
-  background-color: var(--secondary-light-bg);
-}
 .hero {
   background-color: var(--secondary-dark-bg);
 }
@@ -117,9 +114,6 @@ main {
   text-transform: uppercase;
 }
 
-.button {
-  cursor: pointer;
-}
 /* Кнопка героя */
 .button {
   font-family: var(--main-font);
@@ -129,6 +123,7 @@ main {
   letter-spacing: 0.06em;
   color: var(--primary-dark-cl);
   background-color: var(--accent-txt-cl);
+  cursor: pointer;
 }
 
 /* контент */
@@ -160,7 +155,7 @@ main {
   color: var(--primary-light-cl);
 }
 .people {
-  background-color: var(--primary-light-bg)
+  background-color: var(--primary-light-bg);
 }
 
 .people-item {
@@ -196,7 +191,7 @@ main {
 /* сторінка портфоліо */
 
 .filtr {
-  background: var(--primary-dark-cl)
+  background: var(--primary-dark-cl);
 }
 
 .btn:focus,
@@ -209,7 +204,7 @@ main {
   cursor: pointer;
 }
 .filtr-item {
-  font-family:var(--main-font)
+  font-family:var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -217,7 +212,7 @@ main {
   color: var(--primary-light-cl);
 }
 .button-filtr {
-  font-family: var(--main-font)
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -234,13 +229,13 @@ main {
 }
 
 .portfolio-item {
-  background: #FFFFFF;
+  background: var(--primary-dark-cl);
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
 
 .portfolio-tipe {
-  font-family: var(--main-font)
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
