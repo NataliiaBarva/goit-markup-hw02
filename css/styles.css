@@ -124,8 +124,12 @@ span.logo-light {
   color: var(--primary-dark-cl);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
+  
 }
-
+.button:focus,
+.button:hover {
+  background-color: #188CE8;
+  }
 /* контент */
 
 .features-caption {
